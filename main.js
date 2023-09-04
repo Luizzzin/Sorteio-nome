@@ -1,6 +1,6 @@
 const btnSortear = document.querySelector('.sortear');
 const textarea = document.queryselector('.textarea');
-const tagResultado= document.querySelector('resultado p');
+const tagResultado= document.querySelector('.resultado p');
 const popUpResultado =document.querySelector('.resultado')
 
 function pegarDadosFormulario(){
@@ -20,6 +20,6 @@ function geraNumeroAleatorio(tamanhoArray){
     return Math.floor(Math.random()*(tamanhoArray - 0)+0)
 }
 function mostraResultado(nome){
-    tagResultado.innerHTML = `resultado ${nome}`
-    popUpResultado.classList.add(".resultado");
+    tagResultado.innerHTML = `resultado: ${nome}`
+    popUpResultado.classList.add("resultado");
 }
